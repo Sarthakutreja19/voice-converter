@@ -30,9 +30,9 @@ app.post('/api/rephrase', (req, res) => {
 });
 
 // Health check endpoint
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'Backend is working!' });
-});
-
+app.get('/', (req, res) => {
+    res.json({ message: 'Backend is working!' });
+  });
+  
 // Export for Vercel
 module.exports = app;

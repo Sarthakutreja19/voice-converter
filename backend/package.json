@@ -7,6 +7,9 @@
     "start": "node api/index.js",
     "dev": "nodemon api/index.js"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
