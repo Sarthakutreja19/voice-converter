@@ -25,7 +25,7 @@ function App() {
       }
 
       try {
-        const res = await fetch("http://localhost:5000/api/rephrase", {
+        const res = await fetch("https://voice-converter-backend.vercel.app/api/rephrase", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ text: debouncedText }),
