@@ -79,7 +79,7 @@ app.post('/api/rephrase', async (req, res) => {
         console.log(' First result:', results);
 
         // Get the replacement from first result
-        const passiveText = results?.replacement;
+        const passiveText = results[0]?.replacement;
         
         if (!passiveText) {
             console.log(' No replacement in first result');
